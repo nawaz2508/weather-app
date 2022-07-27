@@ -1,20 +1,13 @@
 import {
-  Heading,
-  Avatar,
   Box,
   Center,
   Input,
-  Flex,
-  Text,
-  Stack,
-  Button,
-  useColorModeValue,
   InputGroup,
   InputRightElement,
-  InputLeftElement,
+
 } from "@chakra-ui/react";
 
-import { MdLocationOn } from "react-icons/md";
+// import { MdLocationOn } from "react-icons/md";
 import { SearchIcon } from "@chakra-ui/icons";
 import axios from "axios";
 import { useEffect,useState } from "react";

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Chakra } from './Components/Chakra';
 import {GeoLocation} from "./Components/Location"
