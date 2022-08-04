@@ -21,7 +21,7 @@ export const Chakra = ({ coords }) => {
 
 
   useEffect(() => {
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${coords.coordinates.lat}&lon=${coords.coordinates.lng}&appid=${weather_key}&units=metric`).then((res)=>{
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=bhiwandi&appid=${weather_key}&units=metric`).then((res)=>{
     console.log(res.data)
     setData(res.data)
     console.log(data,"data")
@@ -53,7 +53,7 @@ export const Chakra = ({ coords }) => {
             }
           />
         </InputGroup>
-        {/* <h1>{data.name}</h1> */}
+        <h1>{data.name}</h1>
 
         <Box p={6} border="1px solid red"></Box>
       </Box>

@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.LowerGraph1{
+  /* border:1px solid navy; */
+  height:19%;
+  }
+  .graph{
+    height:100%;
+    /* border:1px solid green; */
+    width: 90%;
+    margin:auto;
+  }

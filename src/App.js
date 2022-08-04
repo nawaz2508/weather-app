@@ -1,8 +1,6 @@
-
 import './App.css';
-import { Chakra } from './Components/Chakra';
 import {GeoLocation} from "./Components/Location"
-
+import {CurrentLocation} from "./Components/Landingpage"
 
 function App() {
   const location=GeoLocation();
@@ -10,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-     <Chakra coords={location}/>
+     <CurrentLocation/>
     </div>
   );
 }
