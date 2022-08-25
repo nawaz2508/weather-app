@@ -3,14 +3,14 @@ import React from "react";
 import Chart from "react-apexcharts";
 import "../App.css";
 function Graph1({ data }) {
-  console.log("api", data);
+  // console.log("api", data);
   const temp = data;
 
   const element = [];
-  console.log("temp", temp);
+  // console.log("temp", temp);
   temp.map((el, i) => {
     element.push(el.temp.max);
-    console.log("daily", el.temp.max);
+    // console.log("daily", el.temp.max);
   });
 
   var obj = {

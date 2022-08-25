@@ -9,7 +9,7 @@ import {
 
 // import { MdLocationOn } from "react-icons/md";
 import { SearchIcon } from "@chakra-ui/icons";
-import axios from "axios";
+
 import { useEffect,useState } from "react";
 
 export const Chakra = ({ coords }) => {
