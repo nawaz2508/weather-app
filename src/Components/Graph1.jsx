@@ -11,6 +11,7 @@ function Graph1({ data }) {
   temp.map((el, i) => {
     element.push(el.temp.max);
     // console.log("daily", el.temp.max);
+    return
   });
 
   var obj = {

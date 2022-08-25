@@ -44,13 +44,6 @@ export const CurrentLocation = () => {
   const [citiesdata, setcitiesdata] = useState([]);
 
   const [cityname, setCityname] = useState("");
-  const Obj = {
-    max: "",
-    pressure: "",
-    humidity: "",
-    sunrise: "",
-    sunset: "",
-  };
 
   const key = "8f90377745b347188210fd84d69d4390";
   const key1 = "f75baa644bb10f8f6d085bfdd8cc6121";
