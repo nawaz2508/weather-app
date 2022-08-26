@@ -40,22 +40,29 @@ export const CurrentLocation = () => {
   const [list, setlist] = useState([]);
   const [change, setchange] = useState([]);
   const [index, setIndex] = useState(0);
-
   const [citiesdata, setcitiesdata] = useState([]);
-
   const [cityname, setCityname] = useState("");
+  const [state,setState]=useState("");
 
-  const key = "8f90377745b347188210fd84d69d4390";
+  const key = "f75baa644bb10f8f6d085bfdd8cc6121";
   const key1 = "f75baa644bb10f8f6d085bfdd8cc6121";
+  
+  // useEffect(() => {
+  //   // getlocation();
+  //   getCity();
+  // },[state]);
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   getCity();
+  // },[]);
+
+  useEffect(()=>{
     getlocation();
-    getCity();
-  }, []);
+  },[state])
 
-  useEffect(() => {
+  useEffect(()=>{
     getCity();
-  }, [cityname]);
+  },[cityname]);
 
   const getlocation = () => {
     //current location
@@ -64,12 +71,10 @@ export const CurrentLocation = () => {
     } else {
       console.log("NS");
     }
+    // showPosition();
   };
-
+  
   const showPosition = (position) => {
-    //current location
-    // console.log(typeof position);
-    // console.log(position.coords);
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
 
@@ -148,6 +153,7 @@ export const CurrentLocation = () => {
                   position="relative"
                   top="4"
                   right="10px"
+               
                 />
               }
             />
